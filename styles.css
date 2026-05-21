@@ -1,56 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
-/* Page background and base text styling */
+/* BASE PAGE STYLING */
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #fff0f6;
+    font-family: Arial;
+    background-color: #ffe6f0;
     text-align: center;
-    font-family: Arial, sans-serif;
-    color: #4a3b3b;
+    margin: 0;
+    color: #4a3f3a;
 }
 
-/* Retro font applied to all major headings, nav, and UI text */
-h1, h2, h3, nav, nav a, button, th, label, caption {
-    font-family: 'Press Start 2P', cursive;
+/* RETRO FONT APPLIED TO HEADINGS, NAV LINKS, BUTTONS, AND CARD TITLES */
+h1, h2, h3, .learn-btn, .navigation-bar a, .card h3, .media-item h3 {
+    font-family: "Press Start 2P", cursive;
     color: #3b2f2f;
 }
 
-/* Navigation links styling */
-nav a {
-    text-decoration: none;
-    color: #5a3d3d;
-}
-
-/* Horizontal line separator styling */
-hr {
-    border: 1px solid #f3c1d9;
-}
-
-/* General paragraph and list text styling */
-p, li {
-    color: #5a4a4a;
-}
-
-/* Image styling with baby blue shadow effect */
-img {
-    box-shadow: 0 4px 10px rgba(173, 216, 230, 0.8);
-    border-radius: 10px;
-}
-
-/* Intro section container (profile + description box) */
-.intro-container {
-    display: inline-block;
-    background-color: #ffe6f0;
+/* TOP HEADER SECTION */
+.page-header {
+    background-color: #ffb6c1;
     padding: 20px;
-    border-radius: 15px;
-    width: 60%;
 }
 
-/* Layout for side-by-side cards (skills, hobbies, activities) */
-.overview-section,
-.cards-section,
-.content-row {
+/* NAVIGATION LINKS */
+.navigation-bar a {
+    margin: 10px;
+    color: #3b2f2f;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+/* PROFILE CONTAINER BOX */
+.intro-box {
+    background-color: #fff0f5;
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 15px;
+}
+
+/* ALL IMAGES BASE STYLE */
+img {
+    box-shadow: 0px 0px 15px #a7d8ff;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* IMAGE HOVER EFFECT */
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px #8ecbff;
+}
+
+/* PROFILE IMAGE SPECIAL STYLE */
+.intro-box img {
+    box-shadow: 0px 0px 20px #8ecbff;
+    border-radius: 20px;
+}
+
+/* DESCRIPTION TEXT STYLE */
+p, li {
+    font-family: Arial;
+    color: #5a4a45;
+}
+
+/* LEARN MORE BUTTON STYLE */
+.learn-btn {
+    padding: 15px 35px;
+    font-size: 16px;
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* LEARN MORE BUTTON HOVER EFFECT */
+.learn-btn:hover {
+    background-color: #ff85c1;
+    transform: scale(1.05);
+}
+
+/* CARD ROW LAYOUT (HORIZONTAL ALIGNMENT) */
+.card-row {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -58,84 +90,67 @@ img {
     margin: 20px;
 }
 
-/* Individual content card styling */
-.overview-card,
-.info-card,
-.content-card {
-    background-color: #ffe6f0;
+/* INDIVIDUAL CARD DESIGN */
+.card {
+    background-color: white;
     padding: 15px;
+    width: 200px;
     border-radius: 15px;
-    width: 250px;
+    box-shadow: 0px 0px 10px #ffb6c1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Learn more button styling */
-.button-container button {
-    padding: 15px 25px;
-    font-size: 12px;
-    background-color: #ffb6d5;
-    border: none;
-    border-radius: 10px;
+/* CARD HOVER EFFECT */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px #ff9ecf;
 }
 
-/* General button styling */
-button {
-    font-family: 'Press Start 2P', cursive;
-    cursor: pointer;
-}
-
-/* Button hover effect */
-button:hover {
-    background-color: #ff9fc6;
-}
-
-/* Table styling for organization list */
-table {
-    margin: auto;
-    background-color: #ffe6f0;
-    border-collapse: collapse;
-}
-
-/* Table borders and spacing */
-th, td {
-    border: 1px solid #f3c1d9;
-    padding: 10px;
-}
-
-/* Media section layout (audio + video side by side) */
-.media-section {
-    background-color: #ffe6f0;
+/* SECTION CONTAINER BOX */
+.section-box {
+    background-color: #fff0f5;
+    margin: 20px;
     padding: 20px;
     border-radius: 15px;
+}
+
+/* MEDIA SECTION CONTAINER (AUDIO + VIDEO) */
+.media-box {
     display: flex;
     justify-content: center;
     gap: 40px;
-    flex-wrap: wrap;
-}
-
-/* Contact form styling container */
-.form-section {
-    background-color: #ffd6e8;
+    background-color: #ffe4ec;
     padding: 20px;
-    border-radius: 15px;
     margin: 20px;
-}
-
-/* Bottom contact info section styling */
-.contact-section {
-    background-color: #f8bcd0;
-    padding: 20px;
     border-radius: 15px;
 }
 
-/* Form input fields styling */
-input, textarea, select {
-    border: 1px solid #e6a9c2;
-    border-radius: 8px;
-    padding: 5px;
+/* MEDIA ITEM CARD STYLE */
+.media-item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-/* Footer styling */
-footer {
+/* CONTACT FORM SECTION */
+.bottom-box {
+    background-color: #ffb6c1;
     padding: 20px;
-    color: #3b2f2f;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+/* CONTACT INFORMATION SECTION (DARKER PINK BOX) */
+.bottom-box-dark {
+    background-color: #ff69b4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+/* FOOTER SECTION */
+.footer {
+    background-color: #ffb6c1;
+    padding: 10px;
 }
