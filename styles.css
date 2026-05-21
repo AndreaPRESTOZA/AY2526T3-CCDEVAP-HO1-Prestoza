@@ -1,0 +1,228 @@
+:root {
+
+    --main-pink: #f8c8dc;
+    --light-pink: #ffe4ee;
+    --soft-pink: #ffd6e7;
+    --dark-pink: #d96c95;
+    --text-color: #5c3a47;
+    --white-color: #ffffff;
+
+}
+
+body {
+
+    background-color: var(--light-pink);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+header {
+
+    background-color: var(--main-pink);
+    padding: 20px;
+    text-align: center;
+
+}
+
+nav {
+
+    margin-top: 10px;
+
+}
+
+nav a {
+
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0px 10px;
+
+}
+
+nav a:hover {
+
+    color: var(--dark-pink);
+
+}
+
+main {
+
+    padding: 20px;
+
+}
+
+.intro-section {
+
+    text-align: center;
+
+}
+
+.intro-container {
+
+    background-color: var(--soft-pink);
+    border: 2px solid var(--dark-pink);
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+
+}
+
+.intro-container img {
+
+    border: 3px solid var(--dark-pink);
+
+}
+
+.button-section {
+
+    text-align: center;
+
+}
+
+button {
+
+    background-color: var(--dark-pink);
+    color: var(--white-color);
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+
+}
+
+button:hover {
+
+    background-color: #c95a84;
+
+}
+
+.cards-section {
+
+    display: flex;
+
+}
+
+.info-card {
+
+    background-color: var(--soft-pink);
+    border: 2px solid var(--dark-pink);
+    width: 30%;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.info-card img {
+
+    border: 2px solid var(--dark-pink);
+
+}
+
+.info-card a {
+
+    color: var(--dark-pink);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+.info-card a:hover {
+
+    text-decoration: underline;
+
+}
+
+table {
+
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white-color);
+
+}
+
+table,
+th,
+td {
+
+    border: 1px solid var(--dark-pink);
+
+}
+
+th {
+
+    background-color: var(--main-pink);
+    padding: 10px;
+
+}
+
+td {
+
+    padding: 10px;
+
+}
+
+caption {
+
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+form {
+
+    background-color: var(--soft-pink);
+    border: 2px solid var(--dark-pink);
+    padding: 20px;
+
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+
+    width: 90%;
+    padding: 10px;
+    border: 1px solid var(--dark-pink);
+
+}
+
+input[type="submit"] {
+
+    background-color: var(--dark-pink);
+    color: var(--white-color);
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+
+}
+
+input[type="submit"]:hover {
+
+    background-color: #c95a84;
+
+}
+
+footer {
+
+    background-color: var(--main-pink);
+    text-align: center;
+    padding: 15px;
+
+}
+
+footer a {
+
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+
+}
+
+footer a:hover {
+
+    color: var(--dark-pink);
+
+}
