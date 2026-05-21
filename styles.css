@@ -1,82 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
+/* Page background and base text styling */
 body {
-    font-family: Arial;
-    background-color: #ffe6f0;
-    text-align: center;
     margin: 0;
+    padding: 0;
+    background-color: #fff0f6;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #4a3b3b;
 }
 
-
-.page-header {
-    background-color: #ffb6c1;
-    padding: 20px;
+/* Retro font applied to all major headings, nav, and UI text */
+h1, h2, h3, nav, nav a, button, th, label, caption {
+    font-family: 'Press Start 2P', cursive;
+    color: #3b2f2f;
 }
 
-h1 {
-    font-family: "Press Start 2P", cursive;
-    color: #ff69b4;
-    letter-spacing: 2px;
-}
-
-
-.navigation-bar a {
-    margin: 10px;
-    color: #a64d79;
+/* Navigation links styling */
+nav a {
     text-decoration: none;
-    font-weight: bold;
+    color: #5a3d3d;
 }
 
-
-.intro-box {
-    background-color: #fff0f5;
-    margin: 20px auto;
-    padding: 20px;
-    width: 60%;
-    border-radius: 15px;
+/* Horizontal line separator styling */
+hr {
+    border: 1px solid #f3c1d9;
 }
 
+/* General paragraph and list text styling */
+p, li {
+    color: #5a4a4a;
+}
 
+/* Image styling with baby blue shadow effect */
 img {
-    box-shadow: 0px 0px 15px #a7d8ff;
-    border-radius: 12px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(173, 216, 230, 0.8);
+    border-radius: 10px;
 }
 
-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 0px 25px #8ecbff;
+/* Intro section container (profile + description box) */
+.intro-container {
+    display: inline-block;
+    background-color: #ffe6f0;
+    padding: 20px;
+    border-radius: 15px;
+    width: 60%;
 }
 
-
-.intro-box img {
-    box-shadow: 0px 0px 20px #8ecbff;
-    border-radius: 20px;
-}
-
-
-.learn-more-box {
-    margin: 20px;
-}
-
-.learn-btn {
-    padding: 15px 35px;
-    font-size: 20px;
-    background-color: #ff69b4;
-    border: none;
-    color: white;
-    border-radius: 12px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-.learn-btn:hover {
-    background-color: #ff85c1;
-    transform: scale(1.05);
-}
-
-
-.card-row {
+/* Layout for side-by-side cards (skills, hobbies, activities) */
+.overview-section,
+.cards-section,
+.content-row {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -84,65 +58,84 @@ img:hover {
     margin: 20px;
 }
 
-
-.card {
-    background-color: white;
+/* Individual content card styling */
+.overview-card,
+.info-card,
+.content-card {
+    background-color: #ffe6f0;
     padding: 15px;
-    width: 200px;
     border-radius: 15px;
-    box-shadow: 0px 0px 10px #ffb6c1;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
 }
 
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 0px 20px #ff9ecf;
-}
-
-
-.section-box {
-    background-color: #fff0f5;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 15px;
-}
-
-
-.media-box {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    background-color: #ffe4ec;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 15px;
-}
-
-.media-item {
-    background-color: white;
-    padding: 10px;
+/* Learn more button styling */
+.button-container button {
+    padding: 15px 25px;
+    font-size: 12px;
+    background-color: #ffb6d5;
+    border: none;
     border-radius: 10px;
 }
 
-
-.bottom-box {
-    background-color: #ffb6c1;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 15px;
+/* General button styling */
+button {
+    font-family: 'Press Start 2P', cursive;
+    cursor: pointer;
 }
 
-
-.bottom-box-dark {
-    background-color: #ff69b4;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 15px;
-    color: white;
+/* Button hover effect */
+button:hover {
+    background-color: #ff9fc6;
 }
 
-.footer {
-    background-color: #ffb6c1;
+/* Table styling for organization list */
+table {
+    margin: auto;
+    background-color: #ffe6f0;
+    border-collapse: collapse;
+}
+
+/* Table borders and spacing */
+th, td {
+    border: 1px solid #f3c1d9;
     padding: 10px;
+}
+
+/* Media section layout (audio + video side by side) */
+.media-section {
+    background-color: #ffe6f0;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Contact form styling container */
+.form-section {
+    background-color: #ffd6e8;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+/* Bottom contact info section styling */
+.contact-section {
+    background-color: #f8bcd0;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Form input fields styling */
+input, textarea, select {
+    border: 1px solid #e6a9c2;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+/* Footer styling */
+footer {
+    padding: 20px;
+    color: #3b2f2f;
 }
