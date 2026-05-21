@@ -1,59 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #fff0f6;
+    font-family: Arial;
+    background-color: #ffe6f0;
     text-align: center;
-    font-family: Arial, sans-serif;
-    color: #4a3b3b;
+    margin: 0;
 }
 
-header {
-    font-family: 'Press Start 2P', cursive;
-    color: #3b2f2f;
+
+.page-header {
+    background-color: #ffb6c1;
     padding: 20px;
 }
 
-nav {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 10px;
+h1 {
+    font-family: "Press Start 2P", cursive;
+    color: #ff69b4;
+    letter-spacing: 2px;
 }
 
-nav a {
+
+.navigation-bar a {
+    margin: 10px;
+    color: #a64d79;
     text-decoration: none;
-    color: #5a3d3d;
+    font-weight: bold;
 }
 
-hr {
-    border: 1px solid #f3c1d9;
+
+.intro-box {
+    background-color: #fff0f5;
+    margin: 20px auto;
+    padding: 20px;
+    width: 60%;
+    border-radius: 15px;
 }
 
-h1, h2, h3 {
-    font-family: 'Press Start 2P', cursive;
-    color: #3b2f2f;
-}
-
-p, li {
-    color: #5a4a4a;
-}
 
 img {
-    box-shadow: 0 4px 10px rgba(173, 216, 230, 0.8);
-    border-radius: 10px;
+    box-shadow: 0px 0px 15px #a7d8ff;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.intro-container {
-    display: inline-block;
-    background-color: #ffe6f0;
-    padding: 20px;
-    border-radius: 15px;
-    width: 60%;
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px #8ecbff;
 }
 
-.overview-section,
-.cards-section,
-.content-row {
+
+.intro-box img {
+    box-shadow: 0px 0px 20px #8ecbff;
+    border-radius: 20px;
+}
+
+
+.learn-more-box {
+    margin: 20px;
+}
+
+.learn-btn {
+    padding: 15px 35px;
+    font-size: 20px;
+    background-color: #ff69b4;
+    border: none;
+    color: white;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.learn-btn:hover {
+    background-color: #ff85c1;
+    transform: scale(1.05);
+}
+
+
+.card-row {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -61,75 +84,65 @@ img {
     margin: 20px;
 }
 
-.overview-card,
-.info-card,
-.content-card {
-    background-color: #ffe6f0;
+
+.card {
+    background-color: white;
     padding: 15px;
+    width: 200px;
     border-radius: 15px;
-    width: 250px;
+    box-shadow: 0px 0px 10px #ffb6c1;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.button-container button {
-    font-family: 'Press Start 2P', cursive;
-    padding: 15px 25px;
-    font-size: 12px;
-    background-color: #ffb6d5;
-    border: none;
-    border-radius: 10px;
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 20px #ff9ecf;
 }
 
-button {
-    font-family: 'Press Start 2P', cursive;
-    cursor: pointer;
-}
 
-button:hover {
-    background-color: #ff9fc6;
-}
-
-table {
-    margin: auto;
-    background-color: #ffe6f0;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid #f3c1d9;
-    padding: 10px;
-}
-
-.media-section {
-    background-color: #ffe6f0;
+.section-box {
+    background-color: #fff0f5;
+    margin: 20px;
     padding: 20px;
     border-radius: 15px;
+}
+
+
+.media-box {
     display: flex;
     justify-content: center;
     gap: 40px;
-    flex-wrap: wrap;
-}
-
-.form-section {
-    background-color: #ffd6e8;
+    background-color: #ffe4ec;
     padding: 20px;
-    border-radius: 15px;
     margin: 20px;
-}
-
-.contact-section {
-    background-color: #f8bcd0;
-    padding: 20px;
     border-radius: 15px;
 }
 
-input, textarea, select {
-    border: 1px solid #e6a9c2;
-    border-radius: 8px;
-    padding: 5px;
+.media-item {
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 
-footer {
-    font-family: 'Press Start 2P', cursive;
+
+.bottom-box {
+    background-color: #ffb6c1;
     padding: 20px;
-    color: #3b2f2f;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+
+.bottom-box-dark {
+    background-color: #ff69b4;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+.footer {
+    background-color: #ffb6c1;
+    padding: 10px;
 }
