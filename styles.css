@@ -1,228 +1,128 @@
-:root {
-
-    --main-pink: #f8c8dc;
-    --light-pink: #ffe4ee;
-    --soft-pink: #ffd6e7;
-    --dark-pink: #d96c95;
-    --text-color: #5c3a47;
-    --white-color: #ffffff;
-
-}
-
-body {
-
-    background-color: var(--light-pink);
-    color: var(--text-color);
+body
+{
+    background-color: #ffeef5;
     font-family: Arial, sans-serif;
+    color: #5c3a4a;
+    text-align: center;
     margin: 0px;
-    padding: 0px;
-
 }
 
-header {
-
-    background-color: var(--main-pink);
+header
+{
+    background-color: #ffd6e7;
     padding: 20px;
-    text-align: center;
-
 }
 
-nav {
-
+nav
+{
     margin-top: 10px;
-
 }
 
-nav a {
-
-    color: var(--text-color);
+nav a
+{
     text-decoration: none;
+    color: #c24d7c;
     font-weight: bold;
-    margin: 0px 10px;
-
-}
-
-nav a:hover {
-
-    color: var(--dark-pink);
-
-}
-
-main {
-
-    padding: 20px;
-
-}
-
-.intro-section {
-
-    text-align: center;
-
-}
-
-.intro-container {
-
-    background-color: var(--soft-pink);
-    border: 2px solid var(--dark-pink);
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-
-}
-
-.intro-container img {
-
-    border: 3px solid var(--dark-pink);
-
-}
-
-.button-section {
-
-    text-align: center;
-
-}
-
-button {
-
-    background-color: var(--dark-pink);
-    color: var(--white-color);
-    border: none;
-    padding: 10px 20px;
-    font-weight: bold;
-
-}
-
-button:hover {
-
-    background-color: #c95a84;
-
-}
-
-.cards-section {
-
-    display: flex;
-
-}
-
-.info-card {
-
-    background-color: var(--soft-pink);
-    border: 2px solid var(--dark-pink);
-    width: 30%;
     margin: 10px;
-    padding: 15px;
-    text-align: center;
-
 }
 
-.info-card img {
-
-    border: 2px solid var(--dark-pink);
-
+nav a:hover
+{
+    color: #ff69b4;
 }
 
-.info-card a {
-
-    color: var(--dark-pink);
-    text-decoration: none;
-    font-weight: bold;
-
+hr
+{
+    border: 1px solid #ffc2d6;
 }
 
-.info-card a:hover {
-
-    text-decoration: underline;
-
+.intro-section
+{
+    margin-top: 30px;
 }
 
-table {
-
-    width: 100%;
-    border-collapse: collapse;
-    background-color: var(--white-color);
-
+.intro-container
+{
+    background-color: #fff7fb;
+    width: 60%;
+    margin: auto;
+    padding: 25px;
+    border: 3px solid #ffc2d6;
 }
 
-table,
-th,
-td {
-
-    border: 1px solid var(--dark-pink);
-
+.profile-image
+{
+    border: 4px solid #ffb6cf;
 }
 
-th {
-
-    background-color: var(--main-pink);
-    padding: 10px;
-
-}
-
-td {
-
-    padding: 10px;
-
-}
-
-caption {
-
-    font-weight: bold;
-    margin-bottom: 10px;
-
-}
-
-form {
-
-    background-color: var(--soft-pink);
-    border: 2px solid var(--dark-pink);
-    padding: 20px;
-
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-
-    width: 90%;
-    padding: 10px;
-    border: 1px solid var(--dark-pink);
-
-}
-
-input[type="submit"] {
-
-    background-color: var(--dark-pink);
-    color: var(--white-color);
+.learn-more-button
+{
+    background-color: #ff9fc5;
+    color: white;
     border: none;
-    padding: 10px 20px;
-    font-weight: bold;
-
-}
-
-input[type="submit"]:hover {
-
-    background-color: #c95a84;
-
-}
-
-footer {
-
-    background-color: var(--main-pink);
-    text-align: center;
     padding: 15px;
-
+    font-size: 18px;
+    margin-top: 15px;
 }
 
-footer a {
+.learn-more-button:hover
+{
+    background-color: #ff7eb3;
+}
 
-    color: var(--text-color);
+.cards-section
+{
+    margin-top: 30px;
+}
+
+.info-card
+{
+    background-color: #fff7fb;
+    border: 3px solid #ffc2d6;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    padding: 20px;
+}
+
+.info-card ul
+{
+    list-style-position: inside;
+    padding: 0px;
+}
+
+.info-card a
+{
     text-decoration: none;
+    color: #d14d86;
     font-weight: bold;
-
 }
 
-footer a:hover {
+.content-row
+{
+    margin-top: 20px;
+}
 
-    color: var(--dark-pink);
+.content-card
+{
+    background-color: #fff7fb;
+    border: 3px solid #ffc2d6;
+    width: 25%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    padding: 20px;
+}
 
+.content-card img
+{
+    border: 3px solid #ffb6cf;
+}
+
+footer
+{
+    background-color: #ffd6e7;
+    padding: 15px;
+    margin-top: 20px;
 }
