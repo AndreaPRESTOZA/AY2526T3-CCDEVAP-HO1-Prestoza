@@ -94,7 +94,7 @@ p, li {
 .card {
     background-color: white;
     padding: 15px;
-    width: 200px;
+    width: 250px;
     border-radius: 15px;
     box-shadow: 0px 0px 10px #ffb6c1;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
